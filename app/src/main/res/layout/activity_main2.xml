@@ -33,7 +33,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight=".33">
+            android:layout_weight=".33"
+            android:background="#24757C">
 
             <TextView
                 android:id="@+id/textView7"
@@ -47,6 +48,7 @@
                 android:textSize="26sp" />
 
             <RadioGroup
+                android:id="@+id/radioGroupSine"
                 android:layout_width="150sp"
                 android:layout_height="300sp"
                 android:layout_alignParentEnd="true"
@@ -56,40 +58,40 @@
                 android:background="@drawable/rounded_corner">
 
                 <RadioButton
-                    android:id="@+id/radioButton6"
+                    android:id="@+id/sinusRadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="Sinus" />
 
                 <RadioButton
-                    android:id="@+id/radioButton5"
+                    android:id="@+id/cosRadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="Cos" />
 
                 <RadioButton
-                    android:id="@+id/radioButton4"
+                    android:id="@+id/tangenRadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="Tangen" />
 
                 <RadioButton
-                    android:id="@+id/radioButton3"
+                    android:id="@+id/cosinusRadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="Cosinus" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/cosecantRadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="Cosecant" />
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/cotangenRadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="Cotangent" />
             </RadioGroup>
 
             <EditText
@@ -154,7 +156,60 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight=".33">
+            android:layout_weight=".33"
+            android:background="#9C27B0">
+
+            <RadioGroup
+                android:layout_width="150dp"
+                android:layout_height="350dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="200dp"
+                android:layout_marginBottom="280dp"
+                android:background="@drawable/rounded_corner">
+
+                <RadioButton
+                    android:id="@+id/radioButton13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/radioButton12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/radioButton11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/radioButton10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/radioButton8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView12"
@@ -162,17 +217,40 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="116dp"
-                android:layout_marginBottom="681dp"
+                android:layout_marginEnd="124dp"
+                android:layout_marginBottom="678dp"
                 android:text="Polynom Function"
                 android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="154dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="285dp"
+                android:layout_marginBottom="166dp"
+                android:text="TextView" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight=".33">
+            android:layout_weight=".33"
+            android:background="#FFC107">
 
             <TextView
                 android:id="@+id/textView9"

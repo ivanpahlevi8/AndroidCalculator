@@ -20,11 +20,19 @@ class MainActivity : AppCompatActivity() {
             val checkPass: Boolean = pass.equals("03052001")
             if (checkId && checkPass) {
                 textView2.setText("Login Success")
-                val intent = Intent(this, MainActivity2::class.java)
-                startActivity(intent)
+                CheckDialog.message = "Login Success"
+                CheckDialog.success = true
+                val dialog = CheckDialog()
+                dialog.show(supportFragmentManager, "123")
             } else if (!checkId) {
+                CheckDialog.message = "Wrong Id"
+                val dialog = CheckDialog()
+                dialog.show(supportFragmentManager, "123")
                 textView2.setText("Wrong Id")
             } else {
+                CheckDialog.message = "Wrong Password"
+                val dialog = CheckDialog()
+                dialog.show(supportFragmentManager, "123")
                 textView2.setText("Wrong Password")
             }
         }

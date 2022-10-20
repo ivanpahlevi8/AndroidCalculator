@@ -12,6 +12,8 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+
+        // sine segment
         generateSine.setOnClickListener{ v ->
             val amplitude: Float = amplitudeInput.text.toString().toFloat()
             val frequency: Float = frequencyInput.text.toString().toFloat()
@@ -76,5 +78,31 @@ class MainActivity2 : AppCompatActivity() {
                 }
             }
         }
+
+        // polynomial segment
+        generatePoly.setOnClickListener{ v ->
+            val inputOrde0: Float = inputOrde0.text.toString().toFloat()
+            val inputOrde1: Float = inputOrde1.text.toString().toFloat()
+            val inputOrde2: Float = inputOrde2.text.toString().toFloat()
+            val inputOrde3: Float = inputOrde3.text.toString().toFloat()
+            val inputOrde4: Float = inputOrde4.text.toString().toFloat()
+            val inputOrde5: Float = inputOrde5.text.toString().toFloat()
+
+            Poly.valOrde0 = inputOrde0
+            Poly.valOrde1 = inputOrde1
+            Poly.valOrde2 = inputOrde2
+            Poly.valOrde3 = inputOrde3
+            Poly.valOrde4 = inputOrde4
+            Poly.valOrde5 = inputOrde5
+
+            val inten = Intent(this, PolynomActivity::class.java)
+            startActivity(inten)
+        }
+
+        imageButton.setOnClickListener{ v ->
+            val infoDialog = InfoDialog()
+            infoDialog.show(supportFragmentManager, "")
+        }
+
     }
 }

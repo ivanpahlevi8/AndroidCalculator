@@ -21,6 +21,8 @@ class SineActivity : AppCompatActivity() {
 
         field.viewport.setScrollableY(true)
 
+        field.getViewport().setMinX(-2147483647.0);
+
         var myData = Array<DataPoint?>(1000){null}
 
         if(Sine.isSine){
